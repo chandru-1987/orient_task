@@ -1,0 +1,6 @@
+<% @comments.each do |comment| %>
+  <tr>
+    <td><%= comment.comment %></td>
+    <td><%= comment.created_at.strftime "%B %e, %Y" %></td>
+  </tr>
+<% end %>
